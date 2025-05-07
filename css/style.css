@@ -1,0 +1,21 @@
+/* Estilos personalizados muy puntuales para complementar MVP.css */
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 0.5em;
+}
+
+.success-message {
+    color: green;
+    font-size: 0.9em;
+    margin-top: 0.5em;
+}
+
+#options-list li {
+    margin-bottom: 0.5em;
+}
+
+#options-list label {
+    display: block;
+    cursor: pointer;
+}

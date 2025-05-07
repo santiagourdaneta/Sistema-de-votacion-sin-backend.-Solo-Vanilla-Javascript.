@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Votación Simple (Sin Backend)</title>
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Sistema de Votación</h1>
+        <p>Elige tu opción y vota (resultados locales).</p>
+    </header>
+    <main>
+        <section id="voting-section">
+            <h2>Opciones de Votación</h2>
+            <form id="vote-form">
+                <ul id="options-list">
+                    <li>
+                        <input type="radio" name="vote" value="1" id="option-1">
+                        <label for="option-1">Opción A</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="vote" value="2" id="option-2">
+                        <label for="option-2">Opción B</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="vote" value="3" id="option-3">
+                        <label for="option-3">Opción C</label>
+                    </li>
+                    </ul>
+                <button type="button" id="vote-button">Votar</button>
+                <p id="vote-error" class="error-message" style="display:none;">Por favor, selecciona una opción.</p>
+                <p id="vote-success" class="success-message" style="display:none;">¡Tu voto ha sido registrado localmente!</p>
+            </form>
+        </section>
+
+        <section id="results-section">
+            <h2>Resultados</h2>
+            <ul id="results-list">
+                </ul>
+            <button type="button" id="show-results-button">Mostrar Resultados</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 - Sistema de Votación Simple (Sin Backend)</p>
+    </footer>
+</body>
+</html>
